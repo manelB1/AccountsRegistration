@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+ 
+  db:
+    image: postgres:14-alpine
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=registration
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=af3b728f-735a-4a82-88c9-2b4ad4542c3f
